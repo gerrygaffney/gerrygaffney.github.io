@@ -129,6 +129,8 @@ img {
   border: 0;
 }
 
+
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -366,6 +368,9 @@ img {
 .img-circle {
   border-radius: 50%;
 }
+
+img.header {width:25%;}
+
 
 hr {
   margin-top: 20px;
