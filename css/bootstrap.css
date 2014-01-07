@@ -342,6 +342,8 @@ img {
   vertical-align: middle;
 }
 
+
+
 .img-responsive {
   display: block;
   height: auto;
@@ -369,10 +371,6 @@ img {
   border-radius: 50%;
 }
 
-img.header {
-  width:25%;
-  border: 20px solid;
-}
 
 
 hr {
@@ -7124,3 +7122,5 @@ td.visible-print {
     display: none !important;
   }
 }
+
+
