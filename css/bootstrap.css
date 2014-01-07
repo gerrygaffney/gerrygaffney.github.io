@@ -369,7 +369,10 @@ img {
   border-radius: 50%;
 }
 
-img.header {width:25%;}
+img.header {
+  width:25%;
+  border: 20px solid;
+}
 
 
 hr {
