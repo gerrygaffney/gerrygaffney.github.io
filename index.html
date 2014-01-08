@@ -44,7 +44,7 @@
           <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
           <a href="javascript:history.go(-1)">Back</a>
 
-          <a class="btn btn-sm btn-primary" href="" align="right" role="button" style="float: right;" >Log in</a>
+          <a class="btn btn-xs btn-primary" href="" align="right" role="button" style="float: right;" >Log in</a>
             
         <p class="clear"></p>
 
@@ -52,9 +52,32 @@
     <!-- End of loginpanel -->
 
 
-      <h1>Hello, world!</h1>
-        <p>a para</p>    
+    <!-- Login chiclet -->
+      <div class="chiclet">
+      <h1>Log in</h1>
 
+        <form name="loginForm" action="/security_check" method="POST" class="form-inline">
+          <input type="hidden" name="redirect_to" value="" id="redirect_to"/>
+          <label for="j_username">Juror number:</label>
+          <input class="input-small" id="j_username" type='text' 
+            name='j_username'
+            autocorrect='off'
+            autocapitalize='off'
+            autocomplete='off' />
+            <br />
+          <label for="j_password">Date of birth:</label>
+          <input class="input-small" id="j_password" type='password' name='j_password' />
+          <input id="proceed" type="submit" value="Log-in"  class="btn-xs"/> 
+          
+        </form>
+
+
+
+      </div>
+    <!-- End of Login chiclet -->
+
+
+       
 
     <!-- Footer -->
       <div id="footer">
