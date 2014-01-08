@@ -1,3 +1,28 @@
-#header img{
-	width: 25%;
+/* Header definitions */
+
+#header{ 
+  width: 100%;
+  margin: auto;
+  padding: 5px 2px 10px 2px;
+  border-bottom: 0.5px solid #909093;
+  background: #ffffff;
 }
+
+#header img{
+	width: 33%;
+}
+
+/* Login panel definitions */
+
+#loginpanel{ 
+  width: 100%;
+  margin: auto;
+   padding: 5px 2px 10px 2px;
+  border-bottom: 0.5px solid #909093;
+  background: #ffffff;
+}
+
+#loginbutton{ 
+  display: inline-block;
+}
+
