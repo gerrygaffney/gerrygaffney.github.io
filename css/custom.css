@@ -77,3 +77,21 @@ p.clear{
 label {
     font-weight: normal;
 }
+
+/** labels & fields **/
+
+
+label { 
+
+clear:both;
+
+padding-left:1%;
+
+float:left;
+
+width: 30%;
+
+ }
+
+
+
