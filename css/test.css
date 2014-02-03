@@ -1,0 +1,45 @@
+/* Header definitions */
+
+
+
+.chiclet {
+  /* display: inline-block; */
+  display:table;
+  width: 98%;
+  padding: 3px;
+  margin: 3px 3px 3px 3px;
+  background-color: #eeeeee;
+  border-radius: 6px;
+
+}
+
+.chiclet h1,
+.chiclet .h1 {
+  line-height: 1;
+  color: inherit;
+}
+
+.chiclet p {
+  line-height: 1;
+}
+
+
+.chiclet_text {
+  display:table-cell;
+  padding:0 0 0 0; 
+}
+
+
+.chiclet_arrow {
+
+display:table-cell; 
+}
+
+.chiclet_arrow img {
+display:table-cell; 
+float:right;
+vertical-align: middle;
+
+}
+
+

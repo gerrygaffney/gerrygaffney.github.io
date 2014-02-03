@@ -55,7 +55,7 @@ p.clear{
 }
 
 .chiclet {
-	display: inline-block;
+  display: inline-block;
   width: 98%;
   padding: 3px;
   margin: 3px 3px 3px 3px;
@@ -93,5 +93,10 @@ width: 30%;
 
  }
 
+.rightarrow {
+
+float:right;
+
+}
 
 
