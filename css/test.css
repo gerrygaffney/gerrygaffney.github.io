@@ -29,10 +29,24 @@
   padding:0 0 0 0; 
 }
 
-
 .chiclet_arrow {
+  display: table-cell;
+  width: 50px;
+  vertical-align: middle;
+}
 
-display:table-cell;
-background: url('../images/rightarrow.png') no-repeat center center;
-width: 50px;
+.chiclet_arrow i {
+  background: url('../images/rightarrow.png') no-repeat center center;
+  display: block;
+  height: 31px;
+  width: 22px;
+  margin: 0 auto;
+}
+
+.chiclet_arrow:hover {
+  outline: 2px solid blue;
+}
+
+.chiclet_arrow:hover i {
+  background-color: blue;
 }
