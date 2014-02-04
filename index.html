@@ -52,57 +52,36 @@
     <!-- End of loginpanel -->
 
 
-<!-- test1 chiclet -->
-      <div class="chiclet">
-     
-
-            <img class = "rightarrow" src="images/rightarrow.png">          
-
-
-      </div>
-
-
-    <!-- End of test1 chiclet -->
-
-    <!-- test chiclet -->
-      <div class="chiclet">
-     
-
-            <img class = "rightarrow" src="images/rightarrow.png">          
-
-
-      <h1>Title</h1>
-          
-      <p>some text</p>  
-         
-      <p>some text</p>  
-
-      </div>
-
-
-    <!-- End of test chiclet -->
 
 
     <!-- Login chiclet -->
       <div class="chiclet">
-      <h1>Log in</h1>
+      
 
-        <form name="loginForm" action="/security_check" method="POST" class="form-inline">
-          <input type="hidden" name="redirect_to" value="" id="redirect_to"/>
-          <label for="j_username" class="label_left">Juror number:</label>
-          <input class="input-small" id="j_username" type='text' 
-            name='j_username'
-            autocorrect='off'
-            autocapitalize='off'
-            autocomplete='off' />
-            <br />
-          <label for="j_password"  class="label_left">Date of birth:</label>
-          <input class="input-small" id="j_password" type='password' name='j_password' />
-          <input id="proceed" type="submit" value="Log-in"  class="btn-xs"/> 
-          
-        </form>
+       <div class="chiclet_text">
+          <h1>Log in</h1>
 
+            <form name="loginForm" action="/security_check" method="POST" class="form-inline">
+              <input type="hidden" name="redirect_to" value="" id="redirect_to"/>
+              <label for="j_username" class="label_left">Juror number:</label>
+              <input class="input-small" id="j_username" type='text' 
+                name='j_username'
+                autocorrect='off'
+                autocapitalize='off'
+                autocomplete='off' />
+                <br />
+              <label for="j_password"  class="label_left">Date of birth:</label>
+              <input class="input-small" id="j_password" type='password' name='j_password' />
+              <input id="proceed" type="submit" value="Log-in"  class="btn-xs"/> 
+              
+            </form>
+
+       </div>
          
+          <a class="chiclet_arrow" href="#">
+          <i></i>
+          </a>
+
 
       </div>
     <!-- End of Login chiclet -->
