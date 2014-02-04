@@ -33,6 +33,6 @@
 .chiclet_arrow {
 
 display:table-cell;
-background: url('file:///home/brian/Desktop/gerrygaffney.github.io/images/rightarrow.png') no-repeat center center;
+background: url('../images/rightarrow.png') no-repeat center center;
 width: 50px;
 }
