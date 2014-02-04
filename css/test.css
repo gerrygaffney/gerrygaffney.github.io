@@ -32,14 +32,7 @@
 
 .chiclet_arrow {
 
-display:table-cell; 
+display:table-cell;
+background: url('file:///home/brian/Desktop/gerrygaffney.github.io/images/rightarrow.png') no-repeat center center;
+width: 50px;
 }
-
-.chiclet_arrow img {
-display:table-cell; 
-float:right;
-vertical-align: middle;
-
-}
-
-
