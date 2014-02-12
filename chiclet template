@@ -1,0 +1,18 @@
+<!-- XXX chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>XXX</h1>
+
+            <p>XXX</p>
+
+       </div>
+         
+          <a class="chiclet_arrow" href="#">
+          <i></i>
+          </a>
+
+
+      </div>
+    <!-- End of XXX chiclet -->
