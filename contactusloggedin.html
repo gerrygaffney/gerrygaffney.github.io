@@ -53,22 +53,42 @@
 
 
     <!-- Contact us online chiclet -->
+
       <div class="chiclet">
       
 
        <div class="chiclet_text">
-          <h1>Contact us online</h1>
+          <h1>Online</h1>
+          <p>Your query or comment:</p>
 
-            <p><a href="login.html">Log in</a> to contact us online.</p>
+            <form name="loginForm" action="/security_check" method="POST" class="form-inline">
+              <input type="hidden" name="redirect_to" value="" id="redirect_to"/>
+              
+            <label class="label_left"></label>
+              <textarea id="contact.formattedPostalAddress" name="contact.formattedPostalAddress" rows="5" style="width: 60%;"></textarea>
+
+              <br />
+              <label class="label_left"></label><p></p>
+
+
+              <label for="j_password"  class="label_left">Email:</label>
+              <input class="input-small" id="j_password" type='password' name='j_password' style="width: 40%;">
+              <br />
+               <input id="proceed" type="submit" value="OK" class="rightbutton"/> 
+         
+
+ 
+          
+         
+
+            </form>
 
        </div>
          
-          <a class="chiclet_arrow" href="login.html">
-          <i></i>
-          </a>
 
 
       </div>
+   
     <!-- End of Contact us online chiclet -->
 
 
