@@ -44,7 +44,7 @@
           <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
           <a href="javascript:history.go(-1)">Back</a>
 
-          <a class="btn btn-xs btn-primary" href="" align="right" role="button" style="float: right;" >Log in</a>
+          <a class="btn btn-xs btn-primary" href="" align="right" role="button" style="float: right;" >Log out</a>
             
         <p class="clear"></p>
 
@@ -59,19 +59,18 @@
 
        <div class="chiclet_text">
           <h1>Online</h1>
-          <p>Your query or comment:</p>
-
+    
             <form name="loginForm" action="/security_check" method="POST" class="form-inline">
               <input type="hidden" name="redirect_to" value="" id="redirect_to"/>
               
-            <label class="label_left"></label>
+            <label class="label_left">Your query or comment:</label>
               <textarea id="contact.formattedPostalAddress" name="contact.formattedPostalAddress" rows="5" style="width: 60%;"></textarea>
 
               <br />
               <label class="label_left"></label><p></p>
 
 
-              <label for="j_password"  class="label_left">Email:</label>
+              <label for="j_password"  class="label_left">Email address (if you need a reply):</label>
               <input class="input-small" id="j_password" type='password' name='j_password' style="width: 40%;">
               <br />
                <input id="proceed" type="submit" value="OK" class="rightbutton"/> 

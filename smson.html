@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact Us</title>
+    <title>SMS notifications</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 
@@ -43,8 +43,9 @@
         <!-- Can add a script here later to hide this panel on the home (logged out) page  -->
           <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
           <a href="javascript:history.go(-1)">Back</a>
-
-          <a class="btn btn-xs btn-primary" href="" align="right" role="button" style="float: right;" >Log in</a>
+                    <a class="btn btn-xs btn-primary" href="" align="right" role="button" style="float: right;" >Log out</a>
+            
+        <p class="clear"></p>
             
         <p class="clear"></p>
 
@@ -52,81 +53,42 @@
     <!-- End of loginpanel -->
 
 
-    <!-- Contact us online chiclet -->
+
+
+    <!-- SMS chiclet -->
       <div class="chiclet">
       
 
        <div class="chiclet_text">
-          <h1>Contact us online</h1>
+          <h1>SMS notifications</h1>
 
-            <p><a href="login.html">Log in</a> to contact us online.</p>
+
+      <label for="j_username" class="label_left">Mobile number:</label>
+              <input class="input-small" id="j_username" type='text' 
+                name='j_username'
+                autocorrect='off'
+                autocapitalize='off'
+                autocomplete='off' 
+                value = '0409 424 404'/>
+           <p class="prompt"></p>
+           <p>Notifications are <strong>ON</strong>.
+  
+            <a class="btn btn-xs btn-primary" href="index.html" style="float:right;" role="button" >Turn notifications OFF</a>      </p>
+            <br />
 
        </div>
-         
-          <a class="chiclet_arrow" href="login.html">
-          <i></i>
-          </a>
+
 
 
       </div>
-    <!-- End of Contact us online chiclet -->
+    
 
 
-   <!-- By Phone chiclet -->
-      <div class="chiclet">
-      
-
-       <div class="chiclet_text">
-          <h1>Phone</h1>
-
-            <p>Call 1300 JUROR (1300 58 767) between 8:30am and 5:00pm weekdays.</p>
-
-       </div>
-         
-         
+    <!-- End of SMS chiclet -->
 
 
-      </div>
-    <!-- End of By Phone chiclet -->
+    
 
-    <!-- By Email chiclet -->
-      <div class="chiclet">
-      
-
-       <div class="chiclet_text">
-          <h1>By Email</h1>
-
-            <p>Send emails to <a href="mailto:sheriff.jury@agd.nsw.gov.au?subject=Jury Service">sheriff.jury@agd.nsw.gov.au</a>.</p>
-
-       </div>
-         
-
-
-      </div>
-    <!-- End of By Email chiclet -->
-
-    <!-- By Post chiclet -->
-      <div class="chiclet">
-      
-
-       <div class="chiclet_text">
-          <h1>By Post</h1>
-
-            <p>You can write to:</p>
-            <p class="address">Jury Service</p>
-            <p class="address">Office of Sheriff of NSW</p>
-            <p class="address">Sydney NSW 2000</p>
-
-       </div>
-         
-         
-
-
-      </div>
-    <!-- End of By Post chiclet -->
-
-
-   
 
     <!-- Footer -->
       <div id="footer">
