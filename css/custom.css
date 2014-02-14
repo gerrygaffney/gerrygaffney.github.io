@@ -92,6 +92,19 @@ p.clear{
   margin: 0 auto;
 }
 
+.chiclet_arrow_disabled {
+  display: table-cell;
+  width: 50px;
+  vertical-align: middle;
+}
+.chiclet_arrow_disabled i {
+  background: url('../images/rightarrowdisabled.png') no-repeat center center;
+  display: block;
+  height: 31px;
+  width: 22px;
+  margin: 0 auto;
+}
+
 .chiclet_arrow:hover {
   outline: 2px solid blue;
 }
@@ -143,4 +156,14 @@ input[type="checkbox"] {
   margin: 0px 10px 0px 30px;
   
   line-height: normal;
+}
+
+img.center { 
+
+    display: block; 
+
+    margin-left: auto; 
+
+    margin-right: auto;
+
 }
