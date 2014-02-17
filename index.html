@@ -18,7 +18,7 @@
     <![endif]-->
 
 
-    
+
     
   </head>
 
@@ -37,6 +37,11 @@
     <!-- End of header -->
 
 
+
+
+
+
+
     <!-- Login panel -->
       <div id="loginpanel">
       
@@ -53,12 +58,24 @@
 
 
 
+
     <!-- Login chiclet -->
       <div class="chiclet">
       
 
        <div class="chiclet_text">
+
+
+
+
+
+
+
+
           <h1>Log in</h1>
+
+
+
 
             <form name="loginForm" action="/security_check" method="POST" class="form-inline">
               <input type="hidden" name="redirect_to" value="" id="redirect_to"/>
@@ -96,6 +113,14 @@
       </div>
     <!-- End of Login chiclet -->
 
+<script>
+// Check browser support
+  // Store
+  localStorage.setItem("Logged", "Out");
+  // Retrieve
+  document.getElementById("result").innerHTML=localStorage.getItem("Logged");
+  
+</script>
 
     <!-- Lost juror number chiclet -->
       <div class="chiclet">
