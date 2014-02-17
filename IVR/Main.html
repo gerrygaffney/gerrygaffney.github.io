@@ -18,7 +18,6 @@
    
      <!-- Custom styles for IVR -->
      <link href="../css/IVR.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -29,6 +28,53 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
   
+            <div id="content">
+            
+            <audio autoplay>
+              <source src="Intro.mp3">     
+            </audio>
+            
+
+
+            <audio preload id="DTMF1">
+              <source src="DTMF-1.mp3">     
+            </audio>
+            <audio preload id="DTMF2">
+              <source src="DTMF-2.mp3">     
+            </audio>
+             <audio preload id="DTMF3">
+              <source src="DTMF-3.mp3">     
+            </audio>
+             <audio preload id="DTMF4">
+              <source src="DTMF-4.mp3">     
+            </audio>
+             <audio preload id="DTMF5">
+              <source src="DTMF-5.mp3">     
+            </audio>
+             <audio preload id="DTMF6">
+              <source src="DTMF-6.mp3">     
+            </audio>
+             <audio preload id="DTMF7">
+              <source src="DTMF-7.mp3">     
+            </audio>
+             <audio preload id="DTMF8">
+              <source src="DTMF-8.mp3">     
+            </audio>
+             <audio preload id="DTMF9">
+              <source src="DTMF-9.mp3">     
+            </audio>
+             <audio preload id="DTMF0">
+              <source src="DTMF-0.mp3">     
+            </audio>
+             <audio preload id="DTMFstar">
+              <source src="DTMF-star.mp3">     
+            </audio>
+             <audio preload id="DTMFpound">
+              <source src="DTMF-pound.mp3">     
+            </audio>
+         
+
+
 
 
 
@@ -36,25 +82,25 @@
         
       </div>
       <p align="center";>
-        <button type="button" class="btn btn-lg btn-primary">1</button>
-        <button type="button" class="btn btn-lg btn-primary">2</button>
-        <button type="button" class="btn btn-lg btn-primary">3</button>
+        <a href="enterjurorid.html"><button onclick="document.getElementById('DTMF1').play()" type="button" class="btn btn-lg btn-primary">1</button></a>
+        <button onclick="document.getElementById('DTMF2').play()" type="button" class="btn btn-lg btn-primary">2</button>
+        <button onclick="document.getElementById('DTMF3').play()" type="button" class="btn btn-lg btn-primary">3</button>
       </p>
       <p align="center";>
-        <button type="button" class="btn btn-lg btn-primary">4</button>
-        <button type="button" class="btn btn-lg btn-primary">5</button>
-        <button type="button" class="btn btn-lg btn-primary">6</button>
+        <button onclick="document.getElementById('DTMF4').play()" type="button" class="btn btn-lg btn-primary">4</button>
+        <button onclick="document.getElementById('DTMF5').play()" type="button" class="btn btn-lg btn-primary">5</button>
+        <button onclick="document.getElementById('DTMF6').play()" type="button" class="btn btn-lg btn-primary">6</button>
       </p>
       </div>
       <p align="center";>
-        <button type="button" class="btn btn-lg btn-primary">7</button>
-        <button type="button" class="btn btn-lg btn-primary">8</button>
-        <button type="button" class="btn btn-lg btn-primary">9</button>
+        <button onclick="document.getElementById('DTMF7').play()" type="button" class="btn btn-lg btn-primary">7</button>
+        <button onclick="document.getElementById('DTMF8').play()" type="button" class="btn btn-lg btn-primary">8</button>
+        <button onclick="document.getElementById('DTMF9').play()" type="button" class="btn btn-lg btn-primary">9</button>
       </p>
       <p align="center";>
-        <button type="button" class="btn btn-lg btn-primary">*</button>
-        <button type="button" class="btn btn-lg btn-primary">0</button>
-        <button type="button" class="btn btn-lg btn-primary">#</button>
+        <button onclick="document.getElementById('DTMF0').play()" type="button" class="btn btn-lg btn-primary">*</button>
+        <button onclick="document.getElementById('DTMFstar').play()" type="button" class="btn btn-lg btn-primary">0</button>
+        <button onclick="document.getElementById('DTMFpound').play()" type="button" class="btn btn-lg btn-primary">#</button>
       </p>
      
 
