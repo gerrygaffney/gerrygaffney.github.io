@@ -113,14 +113,6 @@
       </div>
     <!-- End of Login chiclet -->
 
-<script>
-// Check browser support
-  // Store
-  localStorage.setItem("Logged", "Out");
-  // Retrieve
-  document.getElementById("result").innerHTML=localStorage.getItem("Logged");
-  
-</script>
 
     <!-- Lost juror number chiclet -->
       <div class="chiclet">
@@ -196,12 +188,19 @@
 
 
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="jquery.com/jquery.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins)--> 
+      <script src="js/jquery.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       
-      
+       <script>
+        // Store
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("lastname").innerHTML=localStorage.getItem("lastname");
+
+      </script>
+     
 
   </body>
 </html>
