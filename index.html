@@ -18,8 +18,8 @@
     <![endif]-->
 
 
+      
 
-    
   </head>
 
   <body>
@@ -35,7 +35,6 @@
 
       </div>
     <!-- End of header -->
-
 
 
 
@@ -183,7 +182,11 @@
       </div>
     <!-- End of footer -->
 
+<script>
 
+console.log(localStorage.getItem("lastname"));
+
+</script>
 
 
 
@@ -193,13 +196,6 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       
-       <script>
-        // Store
-        localStorage.setItem("lastname", "Smith");
-        // Retrieve
-        document.getElementById("lastname").innerHTML=localStorage.getItem("lastname");
-
-      </script>
      
 
   </body>
