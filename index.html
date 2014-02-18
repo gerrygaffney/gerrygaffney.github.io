@@ -350,6 +350,95 @@
 
 
 
+
+     <!-- The "attended" div is only displayed if failed to attend -->
+
+    <div id="attended">
+
+
+        <!-- Failure chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>You did not attend for Jury Duty</h1>
+          <p>Our records show that you did not attend for jury duty on 2 June, 2014, at Dubbo court as summonsed, and as required.</p>
+          <p>You must do one of the following.</p>
+       </div>
+
+      
+
+      </div>
+    <!-- End of Failure chiclet -->
+
+    <!-- Explain chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>Explain why you did not attend</h1>
+       </div>
+
+       <a class="chiclet_arrow" href="">
+          <i></i>
+          </a>   
+
+      </div>
+    <!-- End of Explain chiclet -->
+
+
+    <!-- Pay chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>Pay the $1,100 fine</h1>
+
+
+       </div>
+         
+          <a class="chiclet_arrow" href="">
+          <i></i>
+          </a>
+
+
+      </div>
+
+      <!-- End of Pay chiclet -->
+       
+
+
+      <!-- Refer chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>Have the matter dealt with by a court</h1>
+
+         
+       </div>
+         
+          <a class="chiclet_arrow" href="">
+          <i></i>
+          </a>
+
+
+      </div>
+      <!-- End of Refer chiclet -->
+
+
+
+   </div>
+    <!-- End of failed to attend ("attended") content -->
+
+
+   
+
+    <!-- The "rewarding" div is not displayed if failed to attend, if empanelled, or if discharged -->
+
+    <div id="rewarding">
+ 
+
     <!-- Jury Service chiclet -->
       <div class="chiclet">
       
@@ -368,6 +457,10 @@
 
       </div>
     <!-- End of Jury Service chiclet -->
+
+    </div>
+    <!-- End of "rewarding" content -->
+  
 
 
     <!-- Footer -->
@@ -420,7 +513,24 @@ console.log(localStorage.getItem("lastname"));
        }
        </script>   
 
-     
+       <script>
+       if (localStorage.getItem("Attended")=="No") {
+       $('#attended').show();
+
+       } else {
+       $('#attended').hide();
+       }
+       </script>  
+
+
+        <script>
+       if ((localStorage.getItem("Attended")=="No") || (localStorage.getItem("Empanelled")=="Yes") || (localStorage.getItem("Discharged")=="Yes")) {
+       $('#rewarding').hide();
+
+       }
+       </script>       
+
+
 
   </body>
 </html>

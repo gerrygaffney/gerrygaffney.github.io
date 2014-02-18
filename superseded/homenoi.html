@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Juror Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+  <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+   
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<script>
+        function LogOut()
+        {
+        localStorage.setItem("Logged", "Out");
+        }
+        </script>
+    
+    
+  </head>
+
+  <body>
+    <!-- Generic header -->
+    
+      <div id="header">
+
+      <a href="index.html" alt="Home"><img src="images/juror.png" align="left"></a>
+      <img src="images/cats_logo.png" align="right">
+      <p></p>
+         <p class="clear"></p>
+
+
+      </div>
+    <!-- End of header -->
+
+
+    <!-- Login panel -->
+      <div id="loginpanel">
+      
+          <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
+          <a href="javascript:history.go(-1)">Back</a>
+
+           <!-- Conditional log In/Out button -->  
+        <script>
+        if (localStorage.getItem("Logged")=="In") {
+        document.write("<a class=\"btn btn-xs btn-primary\" href=\"\" onclick=\"LogOut();\" align=\"right\" role=\"button\" style=\"float: right;\" >Log out</a>"); 
+        }
+        else{
+        document.write("<a class=\"btn btn-xs btn-primary\" href=\"login.html\" align=\"right\" role=\"button\" style=\"float: right;\" >Log in</a>"); 
+        }
+        </script>
+            
+        <p class="clear"></p>
+
+      </div>
+    <!-- End of loginpanel -->
+
+
+
+
+    <!-- Jury Roll chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>You are on a Jury Roll</h1>
+          <p>You have been randomly selected, and may be selected for jury service between:</p>
+          <p><strong>1 April 2014 and 31 March 2015</strong></p>
+
+       </div>
+
+       <a class="chiclet_arrow" href="viewnoi.html">
+          <i></i>
+          </a>   
+
+      </div>
+    <!-- End of Jury Roll chiclet -->
+
+
+    <!-- Inconvenient Dates chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>Inconvenient dates</h1>
+
+            <p>YWe understand that jury service can be inconvenient. You can nominate dates that are difficult for you (for example, because of travel), and we will try to avoid them.</p>
+
+       </div>
+         
+          <a class="chiclet_arrow" href="inconvenient.html">
+          <i></i>
+          </a>
+
+
+      </div>
+    <!-- Inconvenient Dates chiclet -->
+       
+
+
+      <!-- Can I be Removed chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>Can I be removed from the Jury Roll?</h1>
+
+            <p>People in certain roles (law enforcement, doctors, clergy), or with who are unable to perform their duty because of disability, may be exempt or ineligible from jury duty. You can apply online to be removed from the roll.</p>
+
+       </div>
+         
+          <a class="chiclet_arrow" href="applyremove.html">
+          <i></i>
+          </a>
+
+
+      </div>
+    <!-- End of Can I be Removed chiclet -->
+
+    <!-- Jury Service chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>Jury service - a rewarding responsibility</h1>
+
+            <p>Jury service plays a central role in our justice system. It allows members of our community to play an active role in the administration of justice.</p>
+
+       </div>
+         
+          <a class="chiclet_arrow" href="#">
+          <i></i>
+          </a>
+
+
+      </div>
+    <!-- End of Jury Service chiclet -->
+
+    <!-- My Details chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>My details</h1>
+
+            <p>JSet SMS notifications, check your contact details, or review correspondence.</p>
+
+       </div>
+         
+          <a class="chiclet_arrow" href="#">
+          <i></i>
+          </a>
+
+
+      </div>
+    <!-- End of Jury Service chiclet -->
+
+
+    <!-- Footer -->
+      <div id="footer">
+     
+      <p class="footer"><a href="contactus.html">Contact Us</a> | <a href="security.html">Security & Privacy</a> | <a href="aboutus.html">About Us</a></p><br /><p style="float:right;"><a href=admin.html>admin</a></p>  
+            
+       
+      </div>
+    <!-- End of footer -->
+
+
+
+
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      
+      
+
+  </body>
+</html>

@@ -51,6 +51,17 @@
         {
         localStorage.setItem("Attended", "No");
         }
+
+        function Empanel()
+        {
+         localStorage.setItem("Empanelled", "Yes");
+        }
+        function UnEmpanel()
+        {
+        localStorage.setItem("Empanelled", "No");
+        }
+
+
         function Discharge()
         {
          localStorage.setItem("Discharged", "Yes");
@@ -111,8 +122,8 @@
         document.write("<p>Logged out</p>"); 
         }
         </script>
-        </p><button onclick="LogIn()">Log in</button>
-        <button onclick="LogOut()">Log out</button></p>
+        </p><a href="admin.html"><button onclick="LogIn()">Log in</button></a>
+        <a href="admin.html"><button onclick="LogOut()">Log out</button></a></p>
        </div>
       </div>
     <!-- End of Jury Service chiclet -->
@@ -131,8 +142,8 @@
         }
         </script>
        
-        </p><button onclick="NoI()">Sent</button>
-        <button onclick="NoNoI()">Not sent</button></p>
+        </p><a href="admin.html"><button onclick="NoI()">Sent</button></a>
+        <a href="admin.html"><button onclick="NoNoI()">Not sent</button></a></p>
         </div>
         </div>
     <!-- End of Jury Service chiclet -->
@@ -152,8 +163,8 @@
         }
         </script>
        
-        </p><button onclick="Summonsed()">Summonsed</button>
-        <button onclick="NotSummonsed()">Not summonsed</button></p>
+        </p><a href="admin.html"><button onclick="Summonsed()">Summonsed</button></a>
+        <a href="admin.html"><button onclick="NotSummonsed()">Not summonsed</button></a></p>
         </div>
         </div>
     <!-- End of Jury Service chiclet -->
@@ -172,11 +183,38 @@
         }
         </script>
        
-        </p><button onclick="Attended()">Attended</button>
-        <button onclick="NotAttended()">Did not attend</button></p>
+        </p><a href="admin.html"><button onclick="Attended()">Attended</button></a>
+        <a href="admin.html"><button onclick="NotAttended()">Did not attend</button></a></p>
         </div>
         </div>
     <!-- End of Jury Service chiclet -->
+
+   
+
+ 
+
+
+
+    <!-- View/set variables chiclet -->
+      <div class="chiclet">
+       <div class="chiclet_text">
+        <h1>Empanelled status</h1>
+      
+        <script>
+        if (localStorage.getItem("Empanelled")=="Yes") {
+        document.write("<p>Empanelled</p>"); 
+        }
+        else{
+        document.write("<p>Not empanelled</p>"); 
+        }
+        </script>
+       
+        </p><a href="admin.html"><button onclick="Empanel()">Empanel</button></a>
+        <a href="admin.html"><button onclick="UnEmpanel()">Unempanel</button></a></p>
+        </div>
+        </div>
+    <!-- End of Jury Service chiclet -->
+
 
     <!-- View/set variables chiclet -->
       <div class="chiclet">
@@ -192,11 +230,17 @@
         }
         </script>
        
-        </p><button onclick="Discharge()">Discharge</button>
-        <button onclick="UnDischarge()">Undischarge</button></p>
+        </p><a href="admin.html"><button onclick="Discharge()">Discharge</button></a>
+        <a href="admin.html"><button onclick="UnDischarge()">Undischarge</button></a></p>
         </div>
         </div>
     <!-- End of Jury Service chiclet -->
+
+
+
+
+
+
 
 
 
