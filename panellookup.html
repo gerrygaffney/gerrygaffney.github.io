@@ -17,7 +17,12 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-
+<script>
+        function LogOut()
+        {
+        localStorage.setItem("Logged", "Out");
+        }
+        </script>
     
     
   </head>
@@ -40,11 +45,18 @@
     <!-- Login panel -->
       <div id="loginpanel">
       
-        <!-- Can add a script here later to hide this panel on the home (logged out) page  -->
           <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
           <a href="javascript:history.go(-1)">Back</a>
 
-          <a class="btn btn-xs btn-primary" href="" align="right" role="button" style="float: right;" >Log in</a>
+         <!-- Conditional log In/Out button -->  
+        <script>
+        if (localStorage.getItem("Logged")=="In") {
+        document.write("<a class=\"btn btn-xs btn-primary\" href=\"\" onclick=\"LogOut();\" align=\"right\" role=\"button\" style=\"float: right;\" >Log out</a>"); 
+        }
+        else{
+        document.write("<a class=\"btn btn-xs btn-primary\" href=\"login.html\" align=\"right\" role=\"button\" style=\"float: right;\" >Log in</a>"); 
+        }
+        </script>
             
         <p class="clear"></p>
 
@@ -157,7 +169,7 @@
     <!-- Footer -->
       <div id="footer">
      
-      <p class="footer"><a href="contactus.html">Contact Us</a> | <a href="security.html">Security & Privacy</a> | <a href="aboutus.html">About Us</a></p>
+      <p class="footer"><a href="contactus.html">Contact Us</a> | <a href="security.html">Security & Privacy</a> | <a href="aboutus.html">About Us</a></p><br /><p style="float:right;"><a href=admin.html>admin</a></p>  
             
        
       </div>
