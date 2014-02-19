@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Juror Home</title>
+    <title>Excuse - attach a document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 
@@ -48,7 +48,7 @@
           <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
           <a href="javascript:history.go(-1)">Back</a>
 
-          <!-- Conditional log In/Out button -->  
+         <!-- Conditional log In/Out button -->  
         <script>
         if (localStorage.getItem("Logged")=="In") {
         document.write("<a class=\"btn btn-xs btn-primary\" href=\"\" onclick=\"LogOut();\" align=\"right\" role=\"button\" style=\"float: right;\" >Log out</a>"); 
@@ -64,102 +64,105 @@
     <!-- End of loginpanel -->
 
 
-
-
-    <!-- Summons chiclet -->
+    <!-- Title chiclet -->
       <div class="chiclet">
-      
-
        <div class="chiclet_text">
-          <h1>You are required to attend for Jury Duty</h1>
-          <p>You have been summoned to attend Dubbo court, Brisbane St, Dubbo:</p>
-          <p><strong>9:00 am, Monday June 2 2014</strong></p>
-          <p>Check after 5pm on Friday (May 30) as trials sometimes change with little notice.</p>
+          <h1>Illness / Sickness / Disability</h1>
        </div>
-
-       <a class="chiclet_arrow" href="viewviewsummons.html">
-          <i></i>
-          </a>   
-
       </div>
-    <!-- End of Summons chiclet -->
+    <!-- Title chiclet -->
 
-    <!-- Courthouse chiclet -->
+
+    <!-- Illness chiclet -->
       <div class="chiclet">
-      
-
        <div class="chiclet_text">
-          <h1>Courthouse Details</h1>
+          <h1>Illness</h1>
        </div>
+              </div>
+    <!-- End of Illness chiclet -->
 
-       <a class="chiclet_arrow" href="courthouse.html">
-          <i></i>
-          </a>   
 
+    <!-- Documents chiclet -->
+      <div class="chiclet">
+       <div class="chiclet_text">
+          <h1>Requried documentation</h1>
+          <p>You must provide copies of the following documentation:</p>
+          <ul>
+            <li>Medical certificate or doctor's letter, explaining why you will not be able to perform jury duty during the required time.</li>
+          </ul>
+
+        
       </div>
-    <!-- End of Courthouse chiclet -->
+ 
+ 
+    </div>  
+    <!-- End of Documents chiclet -->
 
 
-    <!-- SMS chiclet -->
+     <!-- The "attach" div is only displayed if attachment is the chosen method -->
+
+      <div id="attach">
+ 
+ 
+
+    <!-- Attach chiclet -->
       <div class="chiclet">
       
 
        <div class="chiclet_text">
-          <h1>SMS notifications</h1>
-
-            <p>Set up handy SMS notificaitons so that we can confirm, or notify you of changes</p>
-
+          <h1>Attach supporting documents</h1>
+          <p>You can attach PDFs, or scans or photos of documents.</p>
+         
+            
+ 
+              <a class="btn btn-xs btn-primary" href="illnessattached.html" align="right" role="button" style="float: left;" >Attach a document</a>
+            
+        <p class="clear"></p>
+       
        </div>
          
-          <a class="chiclet_arrow" href="sms.html">
-          <i></i>
-          </a>
-
-
-      </div>
-
-      <!-- End of SMS chiclet -->
        
 
+      </div>
+    <!-- End of Attach chiclet -->
 
-      <!-- Can I be Excused chiclet -->
+      </div>
+    <!-- End of "attach" div -->
+
+    
+
+ <!-- The "email" div is only displayed if email is the chosen method -->
+
+      <div id="email">
+
+   <!-- Email chiclet -->
       <div class="chiclet">
       
 
        <div class="chiclet_text">
-          <h1>Can I be excused?</h1>
+          <h1>Email supporting documents</h1>
+          
 
-            <p>You can apply to be excused in certain circumstances.</p>
+           <label for="j_password"  class="label_left">Email address:</label>
+              <input class="input-small" id="j_password" type='password' name='j_password' style="width: 60%;"/>
+              <label class="label_left"> </label>
+ 
+            
+        <p class="clear">We will send you an email.</p>
+        <p class="clear">Reply to that email, attaching supporting documentaiton, to complete your application.</p>
 
-       </div>
-         
-          <a class="chiclet_arrow" href="applyremove.html">
-          <i></i>
-          </a>
-
-
-      </div>
-      <!-- End of Can I be Excused chiclet -->
-
-    <!-- Rewarding Responsibility chiclet -->
-      <div class="chiclet">
-      
-
-       <div class="chiclet_text">
-          <h1>Jury service - a rewarding responsibility</h1>
-
-            <p>Jury service plays a central role in our justice system. It allows members of our community to play an active role in the administration of justice.</p>
+        <a class="btn btn-xs btn-primary" href="exemailcconfirm.html" align="right" role="button" style="float: right;" >OK</a>  
+        <br /><p></p>  
 
        </div>
          
-          <a class="chiclet_arrow" href="summonsbrochure.html">
-          <i></i>
-          </a>
 
 
       </div>
-    <!-- End of Rewarding Responsibility chiclet -->
+    <!-- End of Email chiclet -->
 
+  </div>
+    <!-- End of "email" div -->
 
 
 
@@ -182,7 +185,15 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       
-      
+       <script>
+       if (localStorage.getItem("Use")=="Attach") {
+       $('#attach').show();
+       $('#email').hide();
+       } else {
+       $('#attach').hide();
+       $('#email').show();
+       }
+       </script>   
 
   </body>
 </html>

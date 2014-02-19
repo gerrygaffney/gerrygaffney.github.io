@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Illness / Injury / Disability</title>
+    <title>You have been included on a Jury Roll</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 
@@ -17,28 +17,14 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-
-<script>
+        <script>
         function LogOut()
         {
         localStorage.setItem("Logged", "Out");
         }
-        </script>    
+        </script>
     
-
-        <script>
-        // set the result of selecting attach or email
-        function UseAttach()
-        {
-        localStorage.setItem("Use", "Attach");
-        }
-        function UseEmail()
-        {
-        localStorage.setItem("Use", "Email");
-        }
-        </script>    
-
-
+    
   </head>
 
   <body>
@@ -62,7 +48,7 @@
           <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
           <a href="javascript:history.go(-1)">Back</a>
 
-         <!-- Conditional log In/Out button -->  
+        <!-- Conditional log In/Out button -->  
         <script>
         if (localStorage.getItem("Logged")=="In") {
         document.write("<a class=\"btn btn-xs btn-primary\" href=\"\" onclick=\"LogOut();\" align=\"right\" role=\"button\" style=\"float: right;\" >Log out</a>"); 
@@ -78,72 +64,34 @@
     <!-- End of loginpanel -->
 
 
-
-
-   <!-- Title chiclet -->
+    <!-- Summons chiclet -->
       <div class="chiclet">
-       <div class="chiclet_text">
-          <h1>Illness / Sickness / Disability</h1>
-       </div>
-      </div>
-    <!-- Title chiclet -->
+      
 
-
-    <!-- Illness chiclet -->
-      <div class="chiclet">
-       <div class="chiclet_text">
-          <h1>Illness</h1>
-       </div>
-              </div>
-    <!-- End of Illness chiclet -->
-
-
-    <!-- Documents chiclet -->
-      <div class="chiclet">
-       <div class="chiclet_text">
-          <h1>Requried documentation</h1>
-          <p>You must provide copies of the following documentation:</p>
-          <ul>
-            <li>Medical certificate or doctor's letter, explaining why you will not be able to perform jury duty during the required time.</li>
-          </ul>
-
-        
-      </div>
- 
- 
-    </div>  
-    <!-- End of Documents chiclet -->
-
- 
-
-
-
-
-        <!-- Attach/Email chiclet -->
-      <div class="chiclet">
        <div class="chiclet_text">
 
-          <input type="radio" name="how" value="Attach" onclick="UseAttach();">Attach a file or document now <br>
-          <input type="radio" name="how" value="Email" onclick="UseEmail();">Send documents by email<br>
-         <p></p>
+
+
+          <h1>You have been included on a Jury Roll</h1>
+
+   
+ <br />
+        <p class="clear">Page not done yet.  <a href="javascript:history.go(-1)">Go back</a>.</p>
+        <br />
 
      </div>
+
+       
+
+      </div>
+    <!-- End of Summons chiclet -->
+
+
+
  
 
-         
-          
-         <a class="chiclet_arrow" href="illnessattachemail.html">
-      
-          <i></i>
-          </a>
-         
 
-     </div>  
-    <!-- End of Attach/Email chiclet -->
-
-
-
-
+    
 
 
     <!-- Footer -->
@@ -165,9 +113,7 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
       
-     
-
-
+      
 
   </body>
 </html>

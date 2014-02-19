@@ -136,7 +136,7 @@
 
        </div>
          
-          <a class="chiclet_arrow" href="#">
+          <a class="chiclet_arrow" href="lostjurornumber.html">
           <i></i>
           </a>
 
@@ -157,7 +157,7 @@
 
        </div>
          
-          <a class="chiclet_arrow" href="#">
+          <a class="chiclet_arrow" href="panellookup.html">
           <i></i>
           </a>
 
@@ -234,28 +234,7 @@
 
    
 
-    <!-- My Details chiclet -->
-      <div class="chiclet">
-      
-
-       <div class="chiclet_text">
-          <h1>My details</h1>
-
-            <p>JSet SMS notifications, check your contact details, or review correspondence.</p>
-
-       </div>
-         
-          <a class="chiclet_arrow" href="#">
-          <i></i>
-          </a>
-
-
-      </div>
-    <!-- End of Jury Service chiclet -->
-
-
-
-
+ 
 
 
     </div>
@@ -335,7 +314,7 @@
 
        </div>
          
-          <a class="chiclet_arrow" href="applyremove.html">
+          <a class="chiclet_arrow" href="applyexcused.html">
           <i></i>
           </a>
 
@@ -379,7 +358,7 @@
           <h1>Explain why you did not attend</h1>
        </div>
 
-       <a class="chiclet_arrow" href="">
+       <a class="chiclet_arrow" href="explain.html">
           <i></i>
           </a>   
 
@@ -397,7 +376,7 @@
 
        </div>
          
-          <a class="chiclet_arrow" href="">
+          <a class="chiclet_arrow" href="pay.html">
           <i></i>
           </a>
 
@@ -418,7 +397,7 @@
          
        </div>
          
-          <a class="chiclet_arrow" href="">
+          <a class="chiclet_arrow" href="courtdealt.html">
           <i></i>
           </a>
 
@@ -432,7 +411,33 @@
     <!-- End of failed to attend ("attended") content -->
 
 
-   
+    <!-- The "details" div is only displayed if user is logged in -->
+
+    <div id="details">
+ 
+    <!-- My Details chiclet -->
+      <div class="chiclet">
+      
+
+       <div class="chiclet_text">
+          <h1>My details</h1>
+
+            <p>Set SMS notifications, check your contact details, or review correspondence.</p>
+
+       </div>
+         
+          <a class="chiclet_arrow" href="mydetails.html">
+          <i></i>
+          </a>
+
+
+      </div>
+    <!-- End of "details" div -->
+
+    </div>
+ 
+    <!-- My Details chiclet -->
+
 
     <!-- The "rewarding" div is not displayed if failed to attend, if empanelled, or if discharged -->
 
@@ -450,9 +455,13 @@
 
        </div>
          
-          <a class="chiclet_arrow" href="#">
+          <a class="chiclet_arrow" href="jurorbrochure.html">
           <i></i>
           </a>
+
+
+
+
 
 
       </div>
@@ -461,6 +470,8 @@
     </div>
     <!-- End of "rewarding" content -->
   
+   </div>
+    <!-- End of "details content -->
 
 
     <!-- Footer -->
@@ -528,9 +539,15 @@ console.log(localStorage.getItem("lastname"));
        $('#rewarding').hide();
 
        }
-       </script>       
+       </script>  
 
 
+       <script>
+       if ((localStorage.getItem("Logged")=="Out") || (localStorage.getItem("Attended")=="No")) {
+       $('#details').hide();
+       }
+       </script>   
 
+  
   </body>
 </html>

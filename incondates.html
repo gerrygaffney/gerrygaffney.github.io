@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Excuse - attach a document</title>
+    <title>Inconvenient dates</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 
@@ -48,7 +48,7 @@
           <a href="javascript:history.go(-1)"><img src="images/leftarrowsmall.png" align="left" ></a>
           <a href="javascript:history.go(-1)">Back</a>
 
-         <!-- Conditional log In/Out button -->  
+          <!-- Conditional log In/Out button -->  
         <script>
         if (localStorage.getItem("Logged")=="In") {
         document.write("<a class=\"btn btn-xs btn-primary\" href=\"\" onclick=\"LogOut();\" align=\"right\" role=\"button\" style=\"float: right;\" >Log out</a>"); 
@@ -64,68 +64,48 @@
     <!-- End of loginpanel -->
 
 
-    <!-- Title chiclet -->
-      <div class="chiclet">
-       <div class="chiclet_text">
-          <h1>Illness / Sickness / Disability</h1>
-       </div>
-      </div>
-    <!-- Title chiclet -->
 
-
-    <!-- Illness chiclet -->
-      <div class="chiclet">
-       <div class="chiclet_text">
-          <h1>Illness</h1>
-       </div>
-              </div>
-    <!-- End of Illness chiclet -->
-
-
-    <!-- Documents chiclet -->
-      <div class="chiclet">
-       <div class="chiclet_text">
-          <h1>Requried documentation</h1>
-          <p>You must provide copies of the following documentation:</p>
-          <ul>
-            <li>Medical certificate or doctor's letter, explaining why you will not be able to perform jury duty during the required time.</li>
-          </ul>
-
-        
-      </div>
- 
- 
-    </div>  
-    <!-- End of Documents chiclet -->
-
-    <!-- Attach chiclet -->
+    <!-- Contact details chiclet -->
       <div class="chiclet">
       
 
        <div class="chiclet_text">
-          <h1>Attach supporting documents</h1>
-          <p>You can attach PDFs, or scans or photos of documents.</p>
+          <h1>Inconvenient dates</h1>
          
-            
- 
-              <a class="btn btn-xs btn-primary" href="" align="right" role="button" style="float: left;" >Attach a document</a>
-            
-        <p class="clear"></p>
-       
+           <p>Specify the start and end date of the inconvenient period.<p/>
+                <br />
+              <label for="j_username" class="label_left">Start date:</label>
+              <input class="input-small" id="j_username" type='text'style="width:30%;" 
+                name='j_username'
+                autocorrect='off'
+                autocapitalize='off'
+                autocomplete='off' />
+                <br />
+                <br />
+                
+                 
+                <label for="j_username" class="label_left">End date:</label>
+              <input class="input-small" id="j_username" type='text'style="width:30%;" 
+                name='j_username'
+                autocorrect='off'
+                autocapitalize='off'
+                autocomplete='off' />
+                <br />
+                <p></p>
+              
+
+         
+                <a class="btn btn-xs btn-primary" href="incconfirm.html" align="right" role="button" style="float: right;" >OK</a>
+                <br /><p></p>         
+
+            </form>
+
        </div>
          
-<a class="chiclet_arrow_disabled" href="">
-          <i></i>
-          </a>
+
 
       </div>
-    <!-- End of Attach chiclet -->
-
-
-    
-
-
-
+    <!-- End of Login chiclet -->
 
 
 
