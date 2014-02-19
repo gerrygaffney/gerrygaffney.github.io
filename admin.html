@@ -70,6 +70,16 @@
         {
         localStorage.setItem("Discharged", "No");
         }
+
+        function ResetAllVariables()
+        {
+          localStorage.setItem("Logged", "Out");
+          localStorage.setItem("Included", "No");
+          localStorage.setItem("Summonsed", "No");
+          localStorage.setItem("Attended", "Yes");
+          localStorage.setItem("Empanelled", "No");
+          localStorage.setItem("Discharged", "No");
+        }
       </script>
 
 
@@ -109,6 +119,20 @@
 
       </div>
     <!-- End of loginpanel -->
+
+
+
+    <!-- Reset all variables -->
+      <div class="chiclet">
+       <div class="chiclet_text">
+        </p><a href="admin.html"><button onclick="ResetAllVariables()">Reset all variables</button></a>
+       </div>
+      </div>
+    <!-- End of Jury Service chiclet -->
+
+
+
+
 
     <!-- View/set variables chiclet -->
       <div class="chiclet">
